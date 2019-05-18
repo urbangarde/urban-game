@@ -8,12 +8,12 @@ if [ "$EUID" -ne 0 ]; then
     exit
 fi
 
-if [ -d "./certs/" ]; then
+if [ -d "./nginx/certs/" ]; then
     echo "certs exists!"
     exit
 fi
 
-mkdir -p "./certs/"
+mkdir -p "./nginx/certs/"
 
 rm -rf "/tmp/certs/"
 mkdir -p "/tmp/certs/"
@@ -29,9 +29,9 @@ certbot -d "$HOSTNAME" "$TEST_CERT" \
 
 origin="/tmp/certs/$HOSTNAME/live/$HOSTNAME/"
 
-cp "$origin/fullchain.pem" "./certs/fullchain.pem"
-cp "$origin/privkey.pem" "./certs/privkey.pem"
+cp "$origin/fullchain.pem" "./nginx/certs/fullchain.pem"
+cp "$origin/privkey.pem" "./nginx/certs/privkey.pem"
 
-openssl dhparam -out "./certs/dhparam.pem" 2048
+openssl dhparam -out "./nginx/certs/dhparam.pem" 2048
 
 echo "certs created!"
