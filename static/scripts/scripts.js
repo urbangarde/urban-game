@@ -36,10 +36,9 @@ function start() {
 
 function load_next() {
     hide_element('next');
-    if (current_index < game.length - 1) {
+    if (current_index < game.length) {
         document.getElementById('question-img').src = 'static/images/buildings/' + game[current_index].image_filename;
         show_element('question');
-        current_index++;
     }
     else {
         show_result();
@@ -57,6 +56,7 @@ function answer(result) {
     hide_element('question');
     document.getElementById('result-text').innerHTML = game[current_index].building_name + '<br><br>' + game[current_index].info;
     show_element('next');
+    current_index++;
 }
 
 function show_result() {
