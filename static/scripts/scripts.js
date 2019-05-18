@@ -46,7 +46,7 @@ function load_next() {
 }
 
 function answer(result) {
-    if (result = game[current_index].is_avangard) {
+    if (result == game[current_index].is_avangard) {
         score++;
         document.getElementById('is-correct').src = 'static/images/correct.png';
     }
