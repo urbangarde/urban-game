@@ -2,10 +2,13 @@ FROM python:3.7
 
 ENV PYTHONUNBUFFERED 1
 
-RUN useradd -s /bin/false api
-WORKDIR /home/api/application
+RUN apt update
+RUN apt install -y sqlite3
 
-COPY ./application .
+RUN useradd -s /bin/false api
+WORKDIR /home/api/
+
+COPY . .
 
 RUN chmod +x ./run.sh
 RUN pip install -r ./requirements.txt
