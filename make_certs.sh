@@ -18,7 +18,7 @@ mkdir -p "./nginx/certs/"
 rm -rf "/tmp/certs/"
 mkdir -p "/tmp/certs/"
 
-certbot -d "$HOSTNAME" "$TEST_CERT" \
+certbot -d $HOSTNAME $TEST_CERT \
     --config-dir "/tmp/certs/$HOSTNAME" \
     --work-dir "/tmp/certs/$HOSTNAME" \
     --logs-dir "/tmp/certs/$HOSTNAME" \
