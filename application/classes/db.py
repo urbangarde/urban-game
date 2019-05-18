@@ -1,7 +1,7 @@
 import sqlite3
 import random
 
-from Building import Building
+from .Building import Building
 
 
 class CachedDB():
@@ -9,7 +9,7 @@ class CachedDB():
         self.buildings = self._load_all_buildings()
     
     def _load_all_buildings(self):
-        conn = sqlite3.connect("db.db")
+        conn = sqlite3.connect("db.sqlite3")
         cursor = conn.cursor()
         cursor.execute(
             """select building_name, isAvangard, info, image_filename from buildings;""")

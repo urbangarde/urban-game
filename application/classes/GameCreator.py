@@ -1,6 +1,6 @@
 import random
-from db import CachedDB
-from Game import Game
+from .db import CachedDB
+from .Game import Game
 
 
 class GameCreator(object):
