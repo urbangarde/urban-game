@@ -10,7 +10,9 @@ WORKDIR /home/api/
 
 COPY . .
 
-RUN chmod +x ./run.sh
+RUN chown -R api:api . && \
+    chmod +x ./run.sh
+
 RUN pip install -r ./requirements.txt
 
 EXPOSE 8000
