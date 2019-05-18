@@ -17,7 +17,7 @@ var game = -1;
 var current_index = 0;
 var score = 0;
 
-var results = ['bad', 'normal', 'good'];
+var results = [0, 'bad', 'normal', 'good', 4, 5, 6, 7, 8, 9, 10];
 
 function init_game() {
     game = load_game();
