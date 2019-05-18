@@ -1,0 +1,108 @@
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.5;
+  
+    display: block;
+    background-image: url('../images/bg.jpeg');
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+  
+  .content {
+    width: 888px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 150%;
+    color: rgb(0, 0, 0);
+    position: fixed;
+  }
+
+  .container
+  {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .background-color {
+    margin: auto;
+  width: 50%;
+  padding: 10%;
+    width: 888px;
+    left: 25%;
+    transform: translateX(-50%);
+
+    font-size: 150%;
+    top: 10%;
+    width: 888;
+    height: 80%;
+    z-index: 1;
+    opacity: 0.6;
+    transform: translateX(0%);
+  
+    display: block;
+    background: rgb(87, 87, 255);
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .building
+  {
+      max-width: 800px;
+      max-height:400px;
+  }
+
+  .btn-yes {
+    background-image: url('../images/buttoms/yes.png');
+    background-size:cover;
+    float: left;
+    width: 200px;
+    height: 100px;
+  }
+
+  .btn-yes:hover {
+    background-image: url('../images/buttoms/yes-hover.png');
+  }
+
+  .btn-yes:active {
+    background-image: url('../images/buttoms/yes-active.png');
+
+    
+  }
+
+  .btn-no {
+    background-image: url('../images/buttoms/no.png');
+    background-size:cover;
+    float:right;
+    width: 200px;
+    height: 100px;
+  }
+
+  .btn-no:hover {
+    background-image: url('../images/buttoms/no-hover.png');
+  }
+
+  .btn-no:active {
+    background-image: url('../images/buttoms/no-active.png');
+
+    
+  }
