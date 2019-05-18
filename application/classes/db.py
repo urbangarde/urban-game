@@ -1,23 +1,28 @@
 import sqlite3
+import random
 
-def get_size():
-    conn = sqlite3.connect("db.db")
-    cursor = conn.cursor()
-    cursor.execute(
-        """select count(*) from buildings;""")
-    size = cursor.fetchone()
-    conn.close()
-    return size[0]
+from Building import Building
 
-def extract_items_by_id(random_int_array):
-    result = []
-    conn = sqlite3.connect("db.db")
-    cursor = conn.cursor()
-    for i in random_int_array:
+
+class CachedDB():
+    def __init__(self):
+        self.buildings = self._load_all_buildings()
+    
+    def _load_all_buildings(self):
+        conn = sqlite3.connect("db.db")
+        cursor = conn.cursor()
         cursor.execute(
-            """select * from buildings where id=?;""",str(i))
-        item = cursor.fetchone()
-        result.append(item)
-    size = cursor.fetchone()
-    conn.close()
-    return result
+            """select * from buildings;""")
+        records = cursor.fetchall()
+        conn.close()
+        buildings = []
+        for record in records:
+            buildings.append(Building(
+                building_name=record[0], is_avangard = record[1], info = record[2], image_filename=record[3]))
+        return buildings
+    
+    def get_size(self):
+        return len(self.buildings)
+
+    def get_buildings_by_id(self, ids):
+        return [self.buildings[id_] for id_ in ids]
