@@ -17,7 +17,11 @@ var game = -1;
 var current_index = 0;
 var score = 0;
 
-var results = [0, 'bad', 'normal', 'good', 4, 5, 6, 7, 8, 9, 10];
+var bad = 'Вы только начинаете узнавать конструктивизм. У вас еще все впереди!';
+var good = 'Весьма неплохо, Вы достаточно хорошо разбираетесь в конструктивизме.';
+var perfect = 'Вы настоящий гуру конструктивизма!';
+
+var results = [bad, bad, bad, bad, good, good, good, good, perfect, perfect, perfect];
 
 function init_game() {
     game = load_game();
