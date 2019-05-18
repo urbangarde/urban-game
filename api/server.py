@@ -3,7 +3,7 @@ from flask import Flask
 from classes.GameCreator import RandomGameCreator as GameCreator
 from classes.GameSerializer import GameSerializer
 
-task_count = 3
+task_count = 10
 app = Flask(__name__)
 gc = GameCreator()
 
