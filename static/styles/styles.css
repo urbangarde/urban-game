@@ -24,7 +24,7 @@
     transform: translateX(-50%);
 
     font-size: 150%;
-    color: rgb(0, 0, 0);
+    color: rgb(41, 59, 93);
     position: fixed;
   }
 
@@ -72,37 +72,41 @@
   }
 
   .btn-yes {
-    background-image: url('../images/buttoms/yes.png');
+    background-image: url('../images/buttons/yes.png');
     background-size:cover;
-    float: left;
-    width: 200px;
+    width: 130px;
     height: 100px;
+    display: inline-block;
   }
 
   .btn-yes:hover {
-    background-image: url('../images/buttoms/yes-hover.png');
+    background-image: url('../images/buttons/yes-hover.png');
   }
 
   .btn-yes:active {
-    background-image: url('../images/buttoms/yes-active.png');
+    background-image: url('../images/buttons/yes-active.png');
 
     
   }
 
   .btn-no {
-    background-image: url('../images/buttoms/no.png');
+    background-image: url('../images/buttons/no.png');
     background-size:cover;
-    float:right;
-    width: 200px;
+    width: 130px;
     height: 100px;
+    display: inline-block;
   }
 
   .btn-no:hover {
-    background-image: url('../images/buttoms/no-hover.png');
+    background-image: url('../images/buttons/no-hover.png');
   }
 
   .btn-no:active {
-    background-image: url('../images/buttoms/no-active.png');
+    background-image: url('../images/buttons/no-active.png');
 
     
+  }
+
+  .buttons {
+    text-align: center;
   }
