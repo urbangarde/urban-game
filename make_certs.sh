@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HOSTNAME="garde.kelte.cc"
-#TEST_CERT="--test-cert"
+TEST_CERT="--test-cert"
 
 if [ "$EUID" -ne 0 ]; then
     echo "sudo please"
