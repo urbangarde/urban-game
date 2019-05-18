@@ -12,7 +12,7 @@ class CachedDB():
         conn = sqlite3.connect("db.db")
         cursor = conn.cursor()
         cursor.execute(
-            """select * from buildings;""")
+            """select building_name, isAvangard, info, image_filename from buildings;""")
         records = cursor.fetchall()
         conn.close()
         buildings = []
