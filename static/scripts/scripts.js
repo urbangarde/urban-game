@@ -70,7 +70,7 @@ function answer(result) {
 function show_result() {
     document.getElementById('result-score').src = "static/images/scores/" + score.toString() + ".png";
     document.getElementById('result-game').innerHTML = results[score];
-    if (current_index >= 8)
+    if (score>= 8)
     {
         document.getElementById('vova-state').src = "static/images/vova/perfect.png";
     }
