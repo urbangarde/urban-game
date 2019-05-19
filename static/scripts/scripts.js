@@ -65,6 +65,10 @@ function answer(result) {
 
 function show_result() {
     document.getElementById('result-score').src = "static/images/scores/" + score.toString() + ".png";
+    if (current_index >= 8)
+    {
+        document.getElementById('state').src = "static/images/vova/perfect.png";
+    }
     document.getElementById('result-game').innerHTML = results[score];
     show_element('result');
 }
