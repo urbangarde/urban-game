@@ -261,5 +261,5 @@
 
   #vova{
     float:right;
-    z-index:10;
+    z-index:99999;
   }
