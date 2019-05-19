@@ -80,11 +80,12 @@
     filter: blur(5px);
   }
 
+  
   .building {
       max-width: 800px;
       max-height:400px;
       padding-top: 10px;
-      box-shadow: inset 0 0 1em khaki, inset 0 0 1em khaki;
+      border: solid 5px rgb(110, 110, 177);
   }
 
   .buttons {
