@@ -31,15 +31,18 @@ function init_game() {
     hide_element('question');
     hide_element('next');
     hide_element('result');
+    hide_element('vova-state');
 }
 
 function start() {
     hide_element('welcome');
+    hide_element('vova-state');
     load_next(0);
 }
 
 function load_next() {
     hide_element('next');
+    hide_element('vova-state');
     if (current_index < game.length) {
         document.getElementById('question-img').src = 'static/images/buildings/' + game[current_index].image_filename;
         show_element('question');
@@ -58,6 +61,7 @@ function answer(result) {
         document.getElementById('is-correct').src = 'static/images/incorrect.png';
     }
     hide_element('question');
+    hide_element('vova-state');
     document.getElementById('result-text').innerHTML = game[current_index].building_name + '<br><br>' + game[current_index].info;
     show_element('next');
     current_index++;
@@ -71,6 +75,7 @@ function show_result() {
         document.getElementById('vova-state').src = "static/images/vova/perfect.png";
     }
     show_element('result');
+    show_element('vova-state');
 }
 
 init_game();
