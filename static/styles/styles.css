@@ -85,7 +85,7 @@
       max-width: 800px;
       max-height:400px;
       padding-top: 10px;
-      border: solid 5px rgb(110, 110, 177);
+      filter: blur(30px);
   }
 
   .buttons {
