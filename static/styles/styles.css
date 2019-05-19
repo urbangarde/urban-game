@@ -1,0 +1,269 @@
+.background-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.5;
+  
+    display: block;
+    background-image: url('../images/bg.jpeg');
+    width: 100%;
+    height: 100%;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .title {
+    max-height: 100px;
+    padding-bottom: 10px;
+  }
+  
+  .content {
+    width: 888px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 150%;
+    color: rgb(1, 36, 105);
+    position: fixed;
+  }
+
+  .container
+  {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .container:before
+  {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .background-color {
+    margin: auto;
+  width: 50%;
+  padding: 10%;
+    width: 888px;
+    left: 25%;
+    transform: translateX(-50%);
+
+    font-size: 150%;
+    top: 10%;
+    width: 888;
+    height: 80%;
+    z-index: 1;
+    opacity: 0.6;
+    transform: translateX(0%);
+  
+    display: block;
+    background: rgb(87, 87, 255);
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  
+  .building {
+      max-width: 800px;
+      max-height:400px;
+      padding-top: 10px;
+      
+  }
+
+  .buttons {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .btn-yes {
+    background-image: url('../images/buttons/yes.png');
+    background-size:cover;
+    width: 130px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  .btn-yes:hover {
+    background-image: url('../images/buttons/yes-hover.png');
+  }
+
+  .btn-yes:active {
+    background-image: url('../images/buttons/yes-active.png');    
+  }
+
+  .btn-no {
+    background-image: url('../images/buttons/no.png');
+    background-size:cover;
+    width: 130px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  .btn-no:hover {
+    background-image: url('../images/buttons/no-hover.png');
+  }
+
+  .btn-no:active {
+    background-image: url('../images/buttons/no-active.png');
+  }
+
+  .btn-start {
+    background-image: url('../images/buttons/start.png');
+    background-size:cover;
+    width: 400px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  .btn-start:hover {
+    background-image: url('../images/buttons/start-hover.png');
+  }
+
+  .btn-start:active {
+    background-image: url('../images/buttons/start-active.png');    
+  }
+
+  .btn-next {
+    background-image: url('../images/buttons/next.png');
+    background-size:cover;
+    width: 400px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  .btn-next:hover {
+    background-image: url('../images/buttons/next-hover.png');
+  }
+
+  .btn-next:active {
+    background-image: url('../images/buttons/next-active.png');    
+  }
+
+  .btn-again {
+    background-image: url('../images/buttons/again.png');
+    background-size:cover;
+    width: 400px;
+    height: 100px;
+    display: inline-block;
+  }
+
+  .btn-again:hover {
+    background-image: url('../images/buttons/again-hover.png');
+  }
+
+  .btn-again:active {
+    background-image: url('../images/buttons/again-active.png');    
+  }
+
+
+
+  .welcome {
+    position: relative;
+  z-index: 1;
+    height: 400px;
+    color: black;
+    padding: 10px;
+    width: 500px;
+    left: 0;
+    right: 0;
+  }
+
+  .welcome-inner {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    color: #000;
+    position: fixed;
+    transform: translateX(-50%);
+    top:25%;
+  }
+
+  .welcome:before {
+    content: "";
+  position: fixed;
+  left: 0;
+    width: 888px;
+    height: 400px;
+    background-image: url('../images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+    background-size:contain;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  .answer {
+    position: relative;
+  z-index: 1;
+    height: 400px;
+    color: black;
+    padding: 10px;
+    width: 500px;
+    left: 0;
+    right: 0;
+  }
+
+  .answer-inner {
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    font-size: 80%;
+    color: #000;
+    position: fixed;
+    transform: translateX(-50%);
+    top:25%;
+  }
+
+  .answer:before {
+    content: "";
+  position: fixed;
+  left: 0;
+    width: 888px;
+    height: 400px;
+    background-image: url('../images/buildings/img03.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6;
+    z-index: -1;
+    background-size:contain;  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  #is-correct {
+    height: 100px;
+  }
+
+  #vova-state{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index:99999;
+  }

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+        <title> Avangard Game</title>
+        <link rel="stylesheet" type="text/css" href="static/styles/styles.css">
+    </head>
+    <body>
+        <img src="static/images/vova/good.png" id="vova-state">
+        <div class="background-image"></div>
+        <div class="container" id="welcome">
+            <div class="content">
+                <img src="static/images/guess.png" class="title">
+                <div class="welcome">
+                    <div class="welcome-inner">
+                        Екатеринбург - столица конструктивизма. При помощи данной игры вы можете проверить, а так же улучшить свои знания. Вам будет предложено 10 фотографий зданий Екатеринбурга. Ответьте, относятся ли эти здания к архитектуре конструктивизма!
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="btn-start" onclick="start()"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="question">
+            <div class="content">
+                <img src="static/images/is-constructionism.png" class="title">
+                    <img src="static/images/buildings/img03.jpg" class="building" id="question-img">
+                <div class="buttons">
+                    <div class="btn-yes" onclick="answer(true)"></div>
+                    <div class="btn-no" onclick="answer(false)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="next">
+            <div class="content">
+                <img src="static/images/is-constructionism.png" class="title">
+                <div class="answer">
+                    <div class="answer-inner">
+                        <p id="result-text">
+                            Недостроенная телебашня в Екатеринбурге, предназначавшаяся для охвата телерадиосигналом всей Свердловской области. Основная часть построена в 1986—1989 гг. После прекращения финансирования работ в 1990 году оказалась в заброшенном состоянии. Снесена 24 Марта 2018.
+                        </p>
+                        <img src="static/images/correct.png" id="is-correct">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="btn-next" onclick="load_next()"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="result">
+            <div class="content">
+                <img src="static/images/scores/0.png" id="result-score">
+                <div class="welcome">
+                    <div class="welcome-inner" id="result-game">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="btn-again" onclick="init_game()"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="static/scripts/scripts.js"></script>
+    </body>
+</html>
